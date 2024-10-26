@@ -1,0 +1,156 @@
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.slideshow {
+  position: relative;
+  max-width: 100%;
+}
+
+.slideshow .mySlides {
+  display: flex;
+  justify-content: center;
+}
+
+.slideshow button {
+  position: relative;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.slideshow .prev {
+  left: 0;
+}
+
+.slideshow .next {
+  right: 0;
+}
+
+
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card-icons a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.card-icons a:hover {
+  color: #802168;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (min-width: 992px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container {
+    padding: 40px;
+  }
+
+  h1, h2 {
+    font-size: 2rem;
+  }
+}
+
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 1.25rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .card-icons a {
+    font-size: 1rem;
+  }
+}

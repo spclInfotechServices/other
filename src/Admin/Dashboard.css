@@ -1,0 +1,97 @@
+/* Dashboard.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 250px; /* Sidebar width */
+    height: 100vh; /* Full height */
+    background-color: #333; /* Dark background for sidebar */
+    color: #fff; /* White text color */
+    position: fixed; /* Fix sidebar on the left */
+    padding: 20px; /* Padding for sidebar content */
+}
+
+.sidebar h2 {
+    color: #fff; /* Title color */
+    text-align: center; /* Center align title */
+    margin-bottom: 20px; /* Space below title */
+}
+
+.sidebar section {
+    margin-bottom: 15px; /* Space between sections */
+}
+
+.sidebar li {
+    list-style: none; /* Remove bullets */
+}
+
+.sidebar li a {
+    text-decoration: none; /* Remove underline */
+    color: #ddd; /* Light gray text */
+    padding: 10px; /* Padding around links */
+    display: block; /* Block display for full width */
+    transition: background 0.3s; /* Transition for hover effect */
+}
+
+.sidebar li a:hover {
+    background-color: #575757; /* Darker background on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+.recent-orders {
+    margin-left: 300px; /* Leave space for sidebar */
+    padding: 20px; /* Padding around recent orders section */
+    background-color: #fff; /* White background for main content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.recent-orders h2 {
+    margin-bottom: 20px; /* Space below heading */
+    color: #333; /* Dark text for heading */
+}
+
+table {
+    width: 100%; /* Full width for table */
+    border-collapse: collapse; /* Remove space between cells */
+}
+
+table th, table td {
+    border: 1px solid #ddd; /* Light border for cells */
+    padding: 12px; /* Padding inside cells */
+    text-align: left; /* Left align text */
+}
+
+table th {
+    background-color: #f2f2f2; /* Light gray background for header */
+    color: #333; /* Dark text for header */
+}
+
+table tbody tr:hover {
+    background-color: #f9f9f9; /* Light background on row hover */
+}
+
+.table-row-warning {
+    background-color: #ffe6e6; /* Light red background for warning rows */
+}
+
+.table-row-primary {
+    background-color: #e6f7ff; /* Light blue background for primary rows */
+}
+
+.primary {
+    color: #007bff; /* Bootstrap primary color */
+    cursor: pointer; /* Pointer cursor for details */
+    text-decoration: underline; /* Underline for details */
+}
+
+.warning {
+    color: #d9534f; /* Red color for warning */
+    cursor: pointer; /* Pointer cursor for deliver */
+    text-decoration: underline; /* Underline for deliver */
+}
